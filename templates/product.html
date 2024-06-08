@@ -2,19 +2,19 @@
 
 {% block content %}
 
-<h1>Dashboard</h1>
+<h1>Products</h1>
 
 &nbsp;
 
 <table class="table">
     <tr>
         <th>Name</th>
-        <th>Age</th>
+        <th>Price</th>
     </tr>
-    {% for customer in customers %}
+    {% for product in products %}
     <tr>
-        <td>{{customer.name}}</td>
-        <td>{{customer.age}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
     </tr>
 
     {% endfor %}
